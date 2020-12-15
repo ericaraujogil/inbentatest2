@@ -4,7 +4,7 @@ $("#textchat").submit(function(e) {  // <-- ensure form's HTML is ready
             $("#messages").append("<li>Me: "+$("#messageinput").val()+"</li>")
             $( "<p>Writing...</p>" ).insertBefore( ".form-control" );
             $.ajax({
-                type: "GET",
+                type: "POST",
                 url: 'index.php',
                 success: function(response)
                 {
