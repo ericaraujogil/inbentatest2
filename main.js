@@ -11,14 +11,7 @@ $("#textchat").submit(function(e) {  // <-- ensure form's HTML is ready
      
                     // user is logged in successfully in the back-end
                     // let's redirect
-                    if (response.success == "1")
-                    {
-                        console.log("log in")
-                    }
-                    else
-                    {
-                        alert('Invalid Credentials!');
-                    }
+                    console.log(response)
                }
            });
         }
