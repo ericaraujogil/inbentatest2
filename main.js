@@ -11,7 +11,7 @@ $("#textchat").submit(function(e) {  // <-- ensure form's HTML is ready
      
                     // user is logged in successfully in the back-end
                     // let's redirect
-                    console.log(response.message)
+                    $("#messages").html(response);
                }
            });
         }
