@@ -8,11 +8,10 @@ $("#textchat").submit(function(e) {  // <-- ensure form's HTML is ready
                 url: 'index.php',
                 success: function(response)
                 {
-                    var jsonData = JSON.parse(response);
      
                     // user is logged in successfully in the back-end
                     // let's redirect
-                    if (jsonData.success == "1")
+                    if (response.success == "1")
                     {
                         console.log("log in")
                     }
